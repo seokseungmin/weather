@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!-- 로그 파일 경로 및 로그 레벨을 정의하는 프로퍼티 -->
+    <property name="LOGS_PATH" value="./logs"/>
+    <property name="LOGS_LEVEL" value="INFO"/>
+
+    <!-- 파일에 로그를 기록하는 appender 설정 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 로그 파일 경로 설정 -->
+        <file>${LOGS_PATH}/log_file.log</file>
+
+        <!-- 로그 형식을 정의하는 encoder 설정 -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!-- 로그 출력 패턴: 날짜, 상대시간, 스레드 이름, 로그 레벨, 로거 이름, 메시지 -->
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
+            <charset>UTF-8</charset> <!-- UTF-8 인코딩 설정 -->
+        </encoder>
+
+        <!-- 로그 롤링 정책 설정 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 파일 이름 패턴: 날짜와 인덱스를 포함 -->
+            <fileNamePattern>${LOGS_PATH}/%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+
+            <!-- 파일 크기 및 시간 기반 롤링 정책 -->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 최대 파일 크기 설정 -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+
+            <!-- 로그 파일 최대 보관 기간 설정 (60일) -->
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- 루트 로거 설정: 로그 레벨과 appender 참조 -->
+    <root level="${LOGS_LEVEL}">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
