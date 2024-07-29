@@ -7,7 +7,7 @@
 ## 🛠️ Development Environment
 - 🖥️ **Intellij IDEA Ultimate**
 - ☕ **Java 17**
-- ☕ **JDK 17**
+- ☕ **Jdk 17**
 - 🐬 **MySQL**
 - 🔧 **Gradle 8.8**
 - 🌱 **Spring Boot 3.3.2**
