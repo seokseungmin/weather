@@ -110,7 +110,7 @@
 | ![날씨 일기 생성](https://github.com/user-attachments/assets/b05bc406-929f-43cb-a63b-4bd374c5ff33) | ![날씨 일기 보기](https://github.com/user-attachments/assets/fed0c88a-a314-4406-862f-824b246f5ec1) |
 | 날씨 일기 수정   | 날씨 일기 삭제   |
 | ![날씨 일기 수정](https://github.com/user-attachments/assets/ed0bf968-0294-4e25-82fb-e8ab03ce64d5) | ![날씨 일기 삭제](https://github.com/user-attachments/assets/9db7d54c-d327-44e7-a244-3740ef0ffed0) |
-| 날씨 일기들 보기 |
+| 날씨 일기 리스트 보기 |
 | ![날씨 일기들 보기](https://github.com/user-attachments/assets/2bce9848-2166-40d0-92db-0d12128f9150) |
 
 ## 🐬MySQL 데이터 처리
