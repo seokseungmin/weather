@@ -71,29 +71,29 @@
 <details>
 <summary>🔒 트랜잭션 처리</summary>
 
-- DB와 관련된 함수들을 트랜잭션 처리 해주세요.
+- DB와 관련된 함수들을 트랜잭션 처리
 </details>
 
 <details>
 <summary>🌤️ 날씨 데이터 저장</summary>
 
-- 매일 새벽 1시에 날씨 데이터를 외부 API에서 받아 DB에 저장해두는 로직을 구현해주세요.
+- 매일 새벽 1시에 날씨 데이터를 외부 API에서 받아 DB에 저장해두는 로직 구현
 </details>
 
 <details>
 <summary>📝 로그 처리</summary>
 
-- Logback을 이용하여 프로젝트에 로그를 남겨주세요.
+- Logback을 이용하여 프로젝트에 로그처리
 </details>
 
 <details>
 <summary>⚠️ 예외 처리</summary>
 
-- ExceptionHandler를 이용한 예외처리를 해주세요.
+- ExceptionHandler를 이용한 예외처리
 </details>
 
 <details>
 <summary>📑 API Documentation</summary>
 
-- Swagger를 이용하여 API Documentation을 작성해주세요.
+- Swagger를 이용하여 API Documentation을 작성
 </details>
