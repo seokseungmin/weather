@@ -113,3 +113,8 @@
 | 날씨 일기들 보기 |
 | ![날씨 일기들 보기](https://github.com/user-attachments/assets/2bce9848-2166-40d0-92db-0d12128f9150) |
 
+## 🐬MySQL 데이터 처리
+
+| 수정 전 | 수정 후 | 삭제 후 |
+|---------|---------|---------|
+| ![new repo](/src/images/수정전.png) | ![new repo](src/images/수정후.png) | ![new repo](src/images/삭제후.png) |
