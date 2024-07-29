@@ -34,42 +34,42 @@
 <summary>📝 일기 작성 API</summary>
 
 - **POST** /create/diary
-  - `date` parameter로 날짜를 받아주세요. (날짜 형식: yyyy-MM-dd)
-  - `text` parameter로 일기 글을 받아주세요.
-  - 외부 API에서 받아온 날씨 데이터와 함께 DB에 저장해주세요.
+  - `date` parameter로 날짜 입력. (날짜 형식: yyyy-MM-dd)
+  - `text` parameter로 일기 글 입력.
+  - 외부 API에서 받아온 날씨 데이터와 함께 DB에 저장.
 </details>
 
 <details>
 <summary>🔍 일기 조회 API</summary>
 
 - **GET** /read/diary
-  - `date` parameter로 조회할 날짜를 받아주세요.
-  - 해당 날짜의 일기를 List 형태로 반환해주세요.
+  - `date` parameter로 조회할 날짜 입력
+  - 해당 날짜의 일기를 List 형태로 반환.
 </details>
 
 <details>
 <summary>📅 기간별 일기 조회 API</summary>
 
 - **GET** /read/diaries
-  - `startDate`, `endDate` parameter로 조회할 날짜 기간의 시작일과 종료일을 받아주세요.
-  - 해당 기간의 일기를 List 형태로 반환해주세요.
+  - `startDate`, `endDate` parameter로 조회할 날짜 기간의 시작일과 종료일 입력.
+  - 해당 기간의 일기를 List 형태로 반환.
 </details>
 
 <details>
 <summary>✏️ 일기 수정 API</summary>
 
 - **PUT** /update/diary
-  - `date` parameter로 수정할 날짜를 받아주세요.
-  - `text` parameter로 수정할 새 일기 글을 받아주세요.
-  - 해당 날짜의 첫 번째 일기 글을 새로 받아온 일기 글로 수정해주세요.
+  - `date` parameter로 수정할 날짜 입력.
+  - `text` parameter로 수정할 새 일기 글을 입력.
+  - 해당 날짜의 첫 번째 일기 글을 새로 받아온 일기 글로 수정.
 </details>
 
 <details>
 <summary>🗑️ 일기 삭제 API</summary>
 
 - **DELETE** /delete/diary
-  - `date` parameter로 삭제할 날짜를 받아주세요.
-  - 해당 날짜의 모든 일기를 지워주세요.
+  - `date` parameter로 삭제할 날짜 입력.
+  - 해당 날짜의 모든 일기삭제.
 </details>
 
 ## 프로젝트 완성도 높이기  
