@@ -2,6 +2,8 @@
 
  > 외부 API를 이용하여 날씨 데이터를 가져와 일기를 작성하는 프로젝트입니다.
 
+![Front-end](https://skillicons.dev/icons?i=idea,java,mysql,gradle,spring,git)<br>
+
 ## 🛠️ Development Environment
 - 🖥️ **Intellij IDEA Ultimate**
 - ☕ **Java 17**
