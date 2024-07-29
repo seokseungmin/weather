@@ -45,6 +45,7 @@ public class DiaryService {
     // 초 분 시 일 월
     @Transactional
     @Scheduled(cron = "0 0 1 * * *")
+    //@Scheduled(cron = "0/5 * * * * *") 5초에 한번씩
     public void saveWeatherDate() {
         logger.info("오늘도 날씨 데이터 잘 가져옴.");
         dateWeatherRepository.save(getWeatherFromApi());
@@ -105,6 +106,7 @@ public class DiaryService {
         return diaryRepository.findAllByDateBetween(startDate, endDate);
     }
 
+    @Transactional
     public void updateDiary(LocalDate date, String text) {
         Diary nowDiary = diaryRepository.getFirstByDate(date);
         nowDiary.setText(text);
@@ -112,6 +114,7 @@ public class DiaryService {
         diaryRepository.save(nowDiary);
     }
 
+    @Transactional
     public void deleteDiary(LocalDate date) {
         diaryRepository.deleteAllByDate(date);
     }
