@@ -25,7 +25,7 @@
 
 |Swagger|
 |------|
-![swagger](![swagger](https://github.com/user-attachments/assets/7b4a01b3-864e-4cdd-b962-3415826dbf8e)
+![swagger](https://github.com/user-attachments/assets/7b4a01b3-864e-4cdd-b962-3415826dbf8e)
 
 ## 최종 구현 API 리스트  
 
